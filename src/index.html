@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS Starter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: {
+                    DEFAULT: '#ea580c', // Orange-600
+                    hover: '#c2410c',   // Orange-700
+                },
+                secondary: {
+                    DEFAULT: '#65a30d', // Lime-600
+                    hover: '#4d7c0f',   // Lime-700
+                },
+                neutral: {
+                    50: '#fff7ed',      // Orange-50 (Warm white)
+                }
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="flex flex-col min-h-screen bg-neutral-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-primary">My Food App</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="hover:text-primary-hover">Home</a></li>
+                    <li><a href="#" class="hover:text-primary-hover">Menu</a></li>
+                    <li><a href="#" class="hover:text-primary-hover">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <div class="bg-white p-6 rounded-lg shadow border-t-4 border-primary">
+            <h2 class="text-xl font-semibold mb-4 text-secondary">Fresh & Tasty</h2>
+            <p class="mb-4">Welcome to your new food-themed starter template. We've customized the colors to stimulate your appetite!</p>
+            <button class="bg-primary hover:bg-primary-hover text-white font-bold py-2 px-4 rounded transition-colors duration-200">
+                Order Now
+            </button>
+            <button class="ml-2 bg-secondary hover:bg-secondary-hover text-white font-bold py-2 px-4 rounded transition-colors duration-200">
+                View Menu
+            </button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2023 My Food App. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
